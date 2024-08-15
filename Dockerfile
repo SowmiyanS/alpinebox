@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache fluxbox supervisor xvfb xterm firefox-esr
+RUN apk add --no-cache bash fluxbox supervisor xvfb xterm x11vnc firefox-esr
 
 ENV DISPLAY=:0.0 \ 
   DISPLAY_WIDTH=1024 \
